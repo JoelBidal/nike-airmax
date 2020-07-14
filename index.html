@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike</title>
+    <link rel="icon" type="image/png" href="imagenes/fav-icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- <nav>
+        <div>
+            <img src="imagenes/logo-nike.png">
+        </div>
+        <div>
+            <h3>New</h3>
+            <h3>Men</h3>
+            <h3>Women</h3>
+            <h3>Kids</h3>
+        </div>
+        <div>
+            <h3>Menu</h3>
+        </div>
+    </nav> -->
+        <nav class="menu">
+        <div class="box-image">
+            <img src="imagenes/logo-nike.png">
+        </div>
+        <ul>
+            <li><a href="">New</a></li>
+            <li><a href="">Men</a></li>
+            <li><a href="">Women</a></li>
+            <li><a href="">Kids</a>
+                <!-- <ul class="sub-menu">
+                    <li><a href="">No available</a></li>
+                </ul> -->
+            </li>
+            <ul class="right-menu">
+                <li class="right-menu"><a href="#">Menu</a>
+                    <!-- <ul class="sub-menu">
+                        <li><a href="">Login</a></li>
+                    </ul> -->
+                </li>
+            </ul>
+        </ul>
+    </nav>
+    <div class="header">
+        <div class="collection-text">
+            <h1>New Collection</h1>
+        </div>
+        <div class="discover-text">
+            <h3>Discover</h3>
+        </div>
+    </div>
+
+    <div class="option-1">
+        <div class="shoes">
+            <img id="shoe-1" onclick="show1();" src="imagenes/shoes/shoes-1.jpg">
+            <img id="shoe-2" onclick="show2();" src="imagenes/shoes/shoes-2.jpg">
+            <img id="shoe-3" onclick="show3();" src="imagenes/shoes/shoes-3.jpg">
+            <div class="shoes-name">
+                <h1 id="model-shoes">Nike Air Max 98 SE</h1>
+                <h1 id="model-shoes-2">Nike Air Max 98</h1>
+                <h1 id="model-shoes-3">Nike Air Max 98 On Air</h1>
+                <img id="arrow-right" onclick="adelante();" src="imagenes/right-arrow.png">
+            </div>
+        </div>
+        <div class="information">
+            <div class="box-1">
+                <h1 onclick="atras();">Previous</h1>
+                <h1 onclick="adelante();">Next</h1>
+            </div>
+            <div class="box-2">
+                <h1 id="description">Always one step ahead, the Nike Air Max 98 SE features the OG design lines that were inspired by the walls of the Grand Canyon.</h1>
+                <h1 id="description-2">Always one step ahead, the Nike Air Max 98 starts with OG design lines, inspired by the walls of the Grand Canyon and updates the look. As it looks to the future, it offers a new material on top that hides a colorful mix of the rarest kind.</h1>
+                <h1 id="description-3">The Nike Air Max 98 On Air Gabrielle Serrano shoe revives the retro Air Max style with contemporary comfort innovations and a fresh new design inspired by New York City's community and landmarks.</h1>
+                <h1 class="read-more">Read more</h1>
+            </div>
+        </div>
+    </div>
+    <!-- Javascript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

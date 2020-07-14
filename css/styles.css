@@ -1,0 +1,473 @@
+body{
+    background: rgb(227,197,132);
+    background: linear-gradient(350deg, rgba(227,197,132,0.7) 7%, rgba(60,85,115,0.3) 36%, rgba(240,233,221,0.7) 59%, rgba(240, 240, 240, 0.2) 100%);
+    background-size: 110% 110%;
+}
+
+
+
+.menu{
+    background: transparent;
+    width: 100%;
+    height: 5vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    /* border-bottom: 1px solid black; */
+}
+
+.menu a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-family: Sarabun;
+    font-weight: 400; 
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu li{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin: 0 20px;
+    transition: background 0.2s;
+}
+
+.menu li:hover {text-decoration: underline;}
+
+/* .menu li:hover .sub-menu > li{
+    display: block;
+    top: 0;
+}
+
+.sub-menu li{
+    display: none;
+    position: relative;
+    height: 30px;
+    transition: background 0.1s;
+}
+        
+.sub-menu li:hover {text-decoration: underline;}
+
+.sub-menu{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    position: absolute;
+    width: 100px;
+    top: 25px;
+    background:  #eee;
+} */
+
+.right-menu{
+    position: absolute;
+    right: 20px;
+}
+
+.box-image{
+    display: flex;
+    align-items: center;
+    margin: 0 40px;
+}
+
+.menu img{
+    max-width: 50px;
+    height: auto;
+}
+
+/* HEADER COLLECTION */
+
+.header{
+    margin-top: 5vh;
+    width: 100%;
+    height: 24.7vh;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+.collection-text{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.collection-text h1{
+    font-family: 'Cormorant Infant', serif;
+    font-size: 70px;
+    font-weight: 300;
+    color: #000;
+    letter-spacing: -3px;
+}
+
+.discover-text{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.discover-text h3{
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 30px 150px;
+    border-radius: 50%;
+    border: 1px solid black;
+    font-family: arial;
+    color: #000;
+    cursor: pointer;
+}
+
+.discover-text h3:hover{
+    text-decoration: underline;
+}
+
+/* SHOES OPTIONS  */
+
+.option-1{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+}
+
+.shoes{
+    width: 45%;
+    height: 70vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    border-right: 1px solid black;
+    background: #ededed;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shoes #shoe-1{
+    display: block;
+    width: 100%;
+}
+
+.shoes #shoe-2,
+.shoes #shoe-3{
+    display: none;
+    width: 100%;
+}
+
+/* Transiciones */
+
+.shoes #shoe-1,
+.shoes #shoe-2,
+.shoes #shoe-3{
+    animation-name: aparecerShoes;
+    animation-duration: 0.4s;
+}
+
+@keyframes aparecerShoes{
+    0%{opacity: 20%;}
+    50%{opacity: 70%;}
+    100%{opacity: 100% ;}
+}
+
+.shoes-name{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shoes-name #arrow-right{
+    max-width: 40px;
+    margin-right: 70px;
+    cursor: pointer;
+}
+
+.shoes #model-shoes{
+    margin-left: 80px;
+    margin-bottom: 20px;
+    width: 40%;
+    font-size: 40px;
+    font-family: 'Cormorant Infant', serif;
+}
+
+.shoes #model-shoes-2,
+.shoes #model-shoes-3{
+    display: none;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    width: 40%;
+    font-size: 40px;
+    font-family: 'Cormorant Infant', serif;
+}
+
+
+.information{
+    width: 55%;
+    height: 70vh;
+    /* border-left: 1px solid black; */
+}
+
+.information .box-1{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.information .box-1 h1{
+    margin: 30px;
+    font-size: 18px;
+    font-family: arial;
+    cursor: pointer;
+}
+
+.information .box-2{
+    height: 57vh;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.information .box-2 .read-more{
+    margin: 30px;
+    font-size: 18px;
+    font-family: arial;
+    cursor: pointer;
+}
+
+.information .box-2 #description{
+    margin: 30px;
+    width: 25%;
+    font-size: 18px;
+    font-family: arial;
+    line-height: 27px;
+}
+
+.information .box-2 #description-2,
+.information .box-2 #description-3{
+    display: none;
+    margin: 30px;
+    width: 25%;
+    font-size: 18px;
+    font-family: arial;
+    line-height: 27px;
+}
+
+.read-more:hover,
+.box-1 h1:hover{
+    text-decoration: underline;
+}
+
+
+/* Graadientes SHOES */
+
+/* SHOES 1
+background: rgb(160,155,128);
+background: linear-gradient(355deg, rgba(160,155,128,0.1) 25%, rgba(200,201,200,3) 55%, rgba(240,233,221,0.3) 90%, rgba(240, 240, 240, 0.2) 100%);
+*/
+
+/* SHOES 2
+background: rgb(61,47,98);
+background: linear-gradient(355deg, rgba(61,47,98,0.4) 15%, rgba(29,138,141,0.4) 27%, rgba(244,148,104,0.5) 43%, rgba(240,233,221,0.2) 70%);
+*/
+
+/* SHOES 3
+background: rgb(227,197,132);
+background: linear-gradient(350deg, rgba(227,197,132,0.7) 7%, rgba(60,85,115,0.3) 36%, rgba(240,233,221,0.7) 59%, rgba(240, 240, 240, 0.2) 100%);
+*/
+
+
+/* Responsive */
+/* Mobile L */
+@media screen and (min-width: 2000px){
+    .menu .box-image{margin: 0 70px;}
+    .box-image img{max-width: 100px;}
+
+    .menu li{margin: 0 50px;}
+    .menu a{font-size: 30px}
+
+    .collection-text h1{font-size: 140px;}
+    .discover-text h3{font-size: 60px; padding: 50px 250px;}
+
+    .shoes #model-shoes,
+    .shoes #model-shoes-2,
+    .shoes #model-shoes-3{font-size: 80px; margin-bottom: 0;}
+    .shoes-name #arrow-right{max-width: 100px; margin-right: 150px;}
+
+    .information .box-1 h1{margin: 50px; font-size: 50px;}
+    .information .box-2 #description,
+    .information .box-2 #description-2,
+    .information .box-2 #description-3{
+        margin: 50px;
+        font-size: 50px;
+        line-height: 60px;
+        width: 40%;
+    }
+    .information .box-2 .read-more{margin: 50px; font-size: 50px;}
+
+}
+
+
+@media screen and (max-width: 425px){
+    body{background-size: 200% 200%;}
+    .menu{justify-content: center; height: 20vh;}
+    .menu ul{display: none;}
+
+    .header{flex-wrap: wrap; margin-top:20vh; height: 80vh; justify-content: center;}
+    .collection-text{width: 90%; text-align: center;}
+    .discover-text{width: 100%; margin-bottom: 50px;}
+    .discover-text h3{font-size: 22px; padding: 20px 90px;}
+
+    .option-1{height: 100vh; flex-wrap: wrap;}
+    .shoes{width: 100%; height: 100vh; border-bottom: 1px solid black; border-right: 0 solid;}
+    .shoes-name{padding-bottom: 60px;}
+
+    .information{width: 100%; height: 100vh;}
+    
+    .shoes #model-shoes,
+    .shoes #model-shoes-2,
+    .shoes #model-shoes-3 {
+        margin-left: 20px;
+        margin-bottom: 0;
+        width: 100%;
+    }
+    .shoes-name #arrow-right {margin-right: 20px;}
+
+    .information .box-1{display: none;}
+    .information .box-2{
+        height: 100vh;
+        justify-content: center;
+        width: 100%;
+        align-items: flex-end;
+        flex-wrap: wrap;
+    }
+
+    .information .box-2 #description,
+    .information .box-2 #description-2,
+    .information .box-2 #description-3{
+        text-align: center;
+        width: 60%;
+    }
+    .information .box-2 .read-more{
+        margin: 0;
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid black;
+    }
+}
+
+/* Mobile M */
+@media screen and (max-width: 375px){
+    body{background-size: 200% 200%;}
+    .menu{justify-content: center; height: 20vh;}
+    .menu ul{display: none;}
+
+    .header{flex-wrap: wrap; margin-top:20vh; height: 80vh; justify-content: center;}
+    .collection-text{width: 90%; text-align: center;}
+    .discover-text{width: 100%; margin-bottom: 50px;}
+    .discover-text h3{font-size: 22px; padding: 20px 90px;}
+
+    .option-1{height: 100vh; flex-wrap: wrap;}
+    .shoes{width: 100%; height: 100vh; border-bottom: 1px solid black; border-right: 0 solid;}
+    .shoes-name{padding-bottom: 60px;}
+
+    .information{width: 100%; height: 100vh;}
+    
+    .shoes #model-shoes,
+    .shoes #model-shoes-2,
+    .shoes #model-shoes-3 {
+        margin-left: 20px;
+        margin-bottom: 0;
+        width: 100%;
+    }
+    .shoes-name #arrow-right {margin-right: 20px;}
+
+    .information .box-1{display: none;}
+    .information .box-2{
+        height: 100vh;
+        justify-content: center;
+        width: 100%;
+        align-items: flex-end;
+        flex-wrap: wrap;
+    }
+
+    .information .box-2 #description,
+    .information .box-2 #description-2,
+    .information .box-2 #description-3{
+        text-align: center;
+        width: 60%;
+    }
+    .information .box-2 .read-more{
+        margin: 0;
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid black;
+    }
+}
+
+/* Mobile S */
+@media screen and (max-width: 320px){
+    body{background-size: 200% 200%;}
+    .menu{justify-content: center; height: 20vh;}
+    .menu ul{display: none;}
+
+    .header{flex-wrap: wrap; margin-top:20vh; height: 80vh; justify-content: center;}
+    .collection-text{width: 90%; text-align: center;}
+    .discover-text{width: 100%; margin-bottom: 50px;}
+    .discover-text h3{font-size: 22px; padding: 20px 90px;}
+
+    .option-1{height: 100vh; flex-wrap: wrap;}
+    .shoes{width: 100%; height: 100vh; border-bottom: 1px solid black; border-right: 0 solid;}
+    .shoes-name{padding-bottom: 60px;}
+
+    .information{width: 100%; height: 100vh;}
+    
+    .shoes #model-shoes,
+    .shoes #model-shoes-2,
+    .shoes #model-shoes-3 {
+        margin-left: 20px;
+        margin-bottom: 0;
+        width: 100%;
+    }
+    .shoes-name #arrow-right {margin-right: 20px;}
+
+    .information .box-1{display: none;}
+    .information .box-2{
+        height: 100vh;
+        justify-content: center;
+        width: 100%;
+        align-items: flex-end;
+        flex-wrap: wrap;
+    }
+
+    .information .box-2 #description,
+    .information .box-2 #description-2,
+    .information .box-2 #description-3{
+        text-align: center;
+        width: 60%;
+    }
+    .information .box-2 .read-more{
+        margin: 0;
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid black;
+    }
+}
